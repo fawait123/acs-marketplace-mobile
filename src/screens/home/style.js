@@ -3,40 +3,36 @@ import { COLORS } from "../../global/colors";
 
 const style = StyleSheet.create({
   container: {
+    flex: 1,
+    backgroundColor: "red",
+  },
+  containerTop: {
+    flex: 1,
+    backgroundColor: "yellow",
+  },
+  containerHeader: {
+    flex: 1,
+    backgroundColor: "blue",
+  },
+  containerCategory: {
+    flex: 2,
+    marginVertical: 10,
+  },
+  containerProduct: {
+    flex: 4,
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  productTitle: {
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center",
-  },
-  textTitle: {
-    fontSize: 24,
-    fontWeight: 600,
-    marginTop: 20,
-  },
-  textSubTitle: {
-    fontSize: 14,
-    fontWeight: 500,
-    color: COLORS.gray,
-    marginTop: 5,
-  },
-  containerSearch: {
     width: "100%",
-    paddingVertical: 10,
-    paddingHorizontal: 10,
-    borderRadius: 40,
-    borderWidth: 1,
-    borderColor: COLORS.white,
-    overflow: "hidden",
-    backgroundColor: COLORS.white,
-    marginTop: 20,
+    marginVertical: 10,
   },
-  inputGroup: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  input: {
-    marginLeft: 10,
-    fontSize: 14,
-    letterSpacing: 1,
+  titleProduct: {
+    fontSize: 18,
+    fontWeight: "500",
   },
 });
 

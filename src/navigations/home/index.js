@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "../../screens/home";
 import { Feather } from "@expo/vector-icons";
 import { COLORS } from "../../global/colors";
+import ProfileScreen from "../../screens/profile";
 
 const Tab = createBottomTabNavigator();
 
@@ -94,7 +95,7 @@ export default function HomeNavigation() {
       />
       <Tab.Screen
         name="profiles"
-        component={HomeTab}
+        component={ProfileScreen}
         options={{
           tabBarIcon: ({ color, focused }) => (
             <View
